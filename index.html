@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ITMD-361 Internet Technologies and Web Design</title>
+</head>
+
+<body>
+    <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="POST">
+        <fieldset>
+            <legend>Volunteer Form</legend>
+            <h3>My Info</h3>
+            <div>
+                <label for="first_name_field">First Name:</label>
+                <input type="text" id="first_name_field" name="first_name_field">
+            </div>
+            <div>
+                <label for="last_name_field">Last Name:</label>
+                <input type="text" id="last_name_field" name="last_name_field">
+            </div>
+            <div>
+                <label for="phone_field">Phone Number:</label>
+                <input type="tel" id="phone_field" name="phone_field">
+            </div>
+            <div>
+                <label for="email_field">E-mail:</label>
+                <input type="email" id="email_field" name="email_field">
+            </div>
+            <div>
+                <span>Gender: </span>
+                <label for="gender_field_male">Male:</label>
+                <input type="radio" name="gender_field" value="male" id="gender_field_male">
+                <label for="gender_field_female">Female:</label>
+                <input type="radio" name="gender_field" value="female" id="gender_field_female">
+            </div>
+            <div>
+                <label for="age_field">Age:</label>
+                <select name="age_field" id="age_field">
+                    <option value="under 18">under 18</option>
+                    <option value="18 - 24">18 - 24</option>
+                    <option value="25 - 34">25 - 34</option>
+                    <option value="35 - 44">35 - 44</option>
+                    <option value="45 - 54">45 - 54</option>
+                    <option value="55 - 64">55 - 64</option>
+                    <option value="65 and over">65 and over</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>My Availability</legend>
+            <div>
+                <p>Days Available:</p>
+                <label for="Sunday">Sunday</label>
+                <input type="checkbox" name="available_field[]" id="Sunday" value="Sunday">
+                <label for="Monday">Monday</label>
+                <input type="checkbox" name="available_field[]" id="Monday" value="Monday">
+                <label for="Tuesday">Tuesday</label>
+                <input type="checkbox" name="available_field[]" id="Tuesday" value="Tuesday">
+                <label for="Wednesday">Wednesday</label>
+                <input type="checkbox" name="available_field[]" id="Wednesday" value="Wednesday">
+                <label for="Thursday">Thursday</label>
+                <input type="checkbox" name="available_field[]" id="Thursday" value="Thursday">
+                <label for="Friday">Friday</label>
+                <input type="checkbox" name="available_field[]" id="Friday" value="Friday">
+                <label for="Saturday">Saturday</label>
+                <input type="checkbox" name="available_field[]" id="Saturday" value="Saturday">
+            </div>
+            <div>
+                <label for="comments_field">Any Comments?:</label>
+                <textarea name="comments_field" id="comments_field" cols="30" rows="10"></textarea>
+            </div>
+        </fieldset>
+        <div class="button">
+            <button type="submit">Send your message</button>
+        </div>
+        <input type="hidden" value="phodonou" name="hidden_field">
+    </form>
+</body>
+
+</html>
